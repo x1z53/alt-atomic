@@ -32,7 +32,6 @@ BASIC_PACKAGES=(
   hasher-priv
   texlive-dist
   rnote
-  qucs-s
   rpm-utils
   alt-gpgkeys
   thunderbird
