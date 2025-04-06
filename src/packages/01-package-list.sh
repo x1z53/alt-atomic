@@ -4,12 +4,10 @@ set -euo pipefail
 
 BASIC_PACKAGES=(
   alt-gnome-desktop-wallpapers
-  alt-gpgkeys
   apa
   apt-repo
   btop
   cassette
-  eza
   fish
   fzf
   gdb
@@ -22,14 +20,13 @@ BASIC_PACKAGES=(
   kitty
   neovim
   npm
-  papers
-  pinentry-gnome3
   planify
   ripgrep
   rnote
   rpm-utils
   showtime
   telegram-desktop
+  fonts-ttf-google-noto-emoji
   texlive-dist
   resources
   thunderbird
