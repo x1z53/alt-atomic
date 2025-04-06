@@ -1,57 +1,59 @@
 #!/bin/bash
+
 set -euo pipefail
 
-echo "::group:: ===$(basename "$0")==="
-
 BASIC_PACKAGES=(
-  kitty
-  telegram-desktop
-  pinentry-gnome3
-  keyd
-  showtime
+  alt-gnome-desktop-wallpapers
+  alt-gpgkeys
+  apa
+  apt-repo
+  btop
   cassette
+  eza
+  fish
+  fzf
   gdb
+  gear
+  gear-remotes-utils
+  hasher
+  hasher-priv
+  i586-fasm
+  keyd
+  kitty
   neovim
   npm
-  fish
-  zoxide
-  eza
-  yandex-browser-stable
-  apt-repo
-  alt-gnome-desktop-wallpapers
-  xclip
   papers
-  i586-fasm
-  fzf
+  pinentry-gnome3
+  planify
   ripgrep
-  hasher
-  gear
-  btop
-  apa
-  gear-remotes-utils
-  hasher-priv
-  texlive-dist
   rnote
   rpm-utils
-  alt-gpgkeys
+  showtime
+  telegram-desktop
+  texlive-dist
+  resources
   thunderbird
+  xclip
+  yandex-browser-stable
+  zoxide
 )
 
 apt-get install -y "${BASIC_PACKAGES[@]}"
 
 PACKAGES_TO_REMOVE=(
-  ptyxis
-  gnome-console
-  gnome-tour
   clapper
-  yelp
-  gnome-maps
-  gucharmap
+  dconf-editor
   file-roller
-  gnome-shell-extensions
   firefox
+  gnome-characters
+  gnome-console
+  gnome-maps
+  gnome-shell-extensions
+  gnome-software
+  gnome-tour
+  ptyxis
+  virt-manager
+  yelp
 )
 
 apt-get remove -y "${PACKAGES_TO_REMOVE[@]}"
-
-echo "::endgroup::"

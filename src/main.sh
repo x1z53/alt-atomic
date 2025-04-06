@@ -16,7 +16,9 @@ run_scripts_in_dir() {
   if ls "$dir"/*.sh &> /dev/null; then
     for script in $(ls "$dir"/*.sh | sort); do
       echo "==> Running $script"
+      echo "::group:: ===$(basename "$script")==="
       bash "$script"
+      echo "::endgroup::"
     done
   else
     echo "==> No .sh files found in $dir"
