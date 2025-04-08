@@ -43,10 +43,16 @@ PACKAGES_TO_REMOVE=(
   file-roller
   firefox
   gnome-characters
+  gnome-characters
   gnome-console
+  gnome-logs
   gnome-maps
+  gnome-session-xsession
+  gnome-shell-extension-appindicator
+  gnome-shell-extension-dash-to-dock
   gnome-shell-extensions
   gnome-software
+  gnome-text-editor
   gnome-tour
   ptyxis
   virt-manager
